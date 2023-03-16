@@ -840,4 +840,58 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/twohanded/required/raisedhands/dropped(mob/user)	
 	user.visible_message(span_userdanger(("[user] lowers their hands!")))
 	..()
+
+/obj/item/katana/truehanzo
+	name = "True Hanzo Steel Katana"
+	desc = "A magnificent blade said to be forged by the legendary Hattori Hanzo"
+	icon = 'icons/obj/weapons/swords.dmi'
+	icon_state = "katana"
+	item_state = "Katana"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
+	force = 30
+	throwforce = 5
+	slowdown = -0.4
+	w_class = WEIGHT_CLASS_HUGE
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	block_chance = 50
+	armour_penetration = 40
+	sharpness = SHARP_EDGED
+	max_integrity = 200
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 50)
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	item_flags = SLOWS_WHILE_IN_HAND
+
+	var/next_roll
+	var/roll_dist = 3
+
+/obj/item/katana/truehanzo/attack_self(mob/living/user)
+	if(world.time > next_roll)
+		var/stam_cost = 5
+		var/turf/landing_turf = get_ranged_target_turf(user, user.dir, roll_dist)
+		var/spin_direction = FALSE
+		user.adjustStaminaLoss(stam_cost)
+		if (user.getStaminaLoss() >= 100)
+			user.throw_at(landing_turf, 2, 2)
+			user.Paralyze(4 SECONDS)
+			user.visible_message(span_notice("[user] collapses on the ground, exhausted!"), span_warning("You're too tired to finish the roll!"))
+		else
+			playsound(user, 'yogstation/sound/items/dodgeroll.ogg', 50, TRUE)
+			user.apply_status_effect(STATUS_EFFECT_DODGING)
+			if(user.dir == EAST || user.dir == NORTH)
+				spin_direction = TRUE
+			passtable_on(user, src)
+			user.setMovetype(user.movement_type | FLYING)
+			user.safe_throw_at(landing_turf, 4, 1, spin = FALSE)	
+			user.SpinAnimation(speed = 3, loops = 1, clockwise = spin_direction, segments = 3, parallel = TRUE)			
+			passtable_off(user, src)
+			user.setMovetype(user.movement_type & ~FLYING)
+		next_roll = world.time + 1 SECONDS
+	else
+		to_chat(user, span_notice("You need to catch your breath before you can roll again!"))
+
+
 	
