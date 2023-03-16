@@ -1,7 +1,7 @@
 /datum/martial_art/killbill
 	name = "kill bill"
 	id = MARTIALART_KILLBILL
-	help_verb
+	help_verb = /mob/living/carbon/human/proc/killbill_help
 
 /datum/martial_art/killbill/harm_act(mob/living/carbon/human/A, mob/living/B)
 	return TRUE
@@ -48,4 +48,32 @@ if(!A.adjacent(B) || A==B)
 		playsound(B, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
 	log_combat(A, B, "disarmed (kill bill martial art)", "[I ? "removing \the [I]" : ""]")
 
+/obj/item/katana/truehanzo
+	var/datum/martial_art/killbill/style = new
+
+/obj/item/katana/truehanzo/equipped(mob/user, slot)
+	. = ..()
+	if(!ishuman(user))
+		return
+	if(slot == SLOT_HANDS)
+		var/mob/living/carbon/human/A = user
+		style.teach(A,1)
+
+/obj/item/katana/truehanzo/dropped
+	. = ..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/A = user
+	if(H.get_item_by_slot(SLOT_HANDS) == src)
+		style.remove(A)
+
+/mob/living/carbon/human/proc/killbill_help
+	set name = "Pai Meis teachings"
+	set desc = "Remember the techniques of the ancient martial arts master"
+	set category = "killbill"
+	to_chat(usr, span_notice("<b><i>You recall some of Pai Meis teachings</b></i>"))
+	to_chat(usr, span_notice("<b><i>While wielding the sword you are able to master the arts of Pai Meis teachings</b></i>"))
+
+	to_chat(usr, span_notice("<b>Disarm Intent</b> Has a chance to disarm the opponent's main hand, and immediately pick up the item if successful"))
+	to_chat(usr, span_notice("<b>Harm Intent</b> will allow you to do a roundhouse kick, sending your target flying"))
 

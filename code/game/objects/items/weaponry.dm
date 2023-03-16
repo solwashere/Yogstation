@@ -853,7 +853,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	force = 30
 	throwforce = 5
-	slowdown = -0.4
+	slowdown = -0.3
 	w_class = WEIGHT_CLASS_HUGE
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
