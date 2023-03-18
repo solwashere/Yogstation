@@ -18,6 +18,7 @@
 	. = TRUE
 	var/mob/living/victim = B
 	var/obj/item/I = null
+	A.do_attack_animation(B, ATTACK_EFFECT_DISARM)
 	if(prob(60))
 		I = B.get_active_held_item()
 		if(I)
