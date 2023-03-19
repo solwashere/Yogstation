@@ -526,3 +526,22 @@
 	slowdown_set = 0.4 // Very slow
 	armor = list(MELEE = 55, BULLET = 60, LASER = 60, ENERGY = 40, BOMB = 40, BIO = 0, RAD = 0, FIRE = 65, ACID = 75, WOUND = 50)	//Walking tank
 	partial_coverage = LEGS|ARMS
+
+/obj/item/clothing/armor/bridesuit
+	name = "The Bride Suit"
+	desc = "A yellow jumpsuit, for when you need to kill Bill"
+	icon_state = "yellow_bride_suit"
+	item_state = "yellow_bride_suit"
+	allowed = null
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
+	strip_delay = 60
+	equip_delay_other = 40
+	max_integrity = 300
+	resistance_flags = FIRE_PROOF|ACID_PROOF
+	slowdown = -0.2
+	armor = list(MELEE = 20, BULLET = 20, LASER = 45, ENERGY = 65, BOMB = 20, BIO = 0, RAD = 15, FIRE = 50, ACID = 50, WOUND = 10)
+	cryo_preserve = TRUE

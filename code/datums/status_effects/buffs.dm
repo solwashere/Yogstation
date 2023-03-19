@@ -632,3 +632,15 @@
 		H.physiology.clone_mod /= 0.35
 		H.physiology.stamina_mod /= 0.35
 	owner.log_message("lost buster damage reduction", LOG_ATTACK)//yogs end
+
+/datum/status_effect/focus
+	id = "focus"
+	duration = 15
+	tick_interval = 0
+	status_type = STATUS_EFFECT_UNIQUE
+	alert_type = /atom/movable/screen/alert/status_effect/focus
+
+/atom/movable/screen/alert/status_effect/focus
+	name = "Focus"
+	desc = "You close your eyes and focus; You have increased damage and block chance"
+	icon_state = "Focus"
