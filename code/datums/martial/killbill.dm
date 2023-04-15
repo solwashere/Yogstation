@@ -15,23 +15,23 @@
 	playsound(get_turf(victim), 'sound/effects/hit_kick.ogg', 50, 1, -1)
 
 /datum/martial_art/killbill/disarm_act(mob/living/carbon/human/A, mob/living/B)
-	. = TRUE
-	var/mob/living/victim = B
+	if(!(can_use(A) || can_use(B)))
+		return FALSE
 	var/obj/item/I = null
 	A.do_attack_animation(B, ATTACK_EFFECT_DISARM)
-	if(prob(60))
-		I = B.get_active_held_item()
-		if(I)
-			if(B.temporarilyRemoveItemFromInventory(I))
+	if(!B.stat && !B.IsParalyzed() && !restraining)
+		if(prob(40)) //less strong than the CQC disarm
+			I = B.get_active_held_item()
+			B.visible_message(span_warning("[A] quickly grabs [B]'s arm and and chops it, disarming them!"), \
+								span_userdanger("[A] grabs your arm and chops it, disarming you!"))
+			playsound(get_turf(B), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
+			if(I && B.temporarilyRemoveItemFromInventory(I))
 				A.put_in_hands(I)
-		B.visible_message(span_danger("[A] has disarmed [B]!"), \
-		span_userdanger("[A] has disarmed [B]!"))
-		playsound(B, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
-	else
-		B.visible_message(span_danger("[A] failed to disarm [B]!"), \
-			span_userdanger("[A] failed to disarm [B]!"))
-		playsound(B, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
-	log_combat(A, B, "disarmed (kill bill martial art)", "[I ? "removing \the [I]" : ""]")
+		else
+			B.visible_message(span_danger("[A] grabs at [B]'s arm, but misses!"), \
+								span_userdanger("[A] grabs at your arm, but misses!"))
+			playsound(B, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
+		log_combat(A, B, "disarmed (kill bill martial art)", "[I ? " grabbing \the [I]" : ""]")
 
 /obj/item/katana/truehanzo
 	var/datum/martial_art/killbill/style = new
