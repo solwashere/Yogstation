@@ -8993,28 +8993,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
-"bYc" = (
-/obj/structure/table,
-/obj/item/roller{
-	pixel_x = -3;
-	pixel_y = 14
-	},
-/obj/item/roller{
-	pixel_x = -3;
-	pixel_y = 10
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_x = 7;
-	pixel_y = 12
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_x = 7;
-	pixel_y = 4
-	},
-/obj/item/pickaxe/mini,
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/plasteel/white,
-/area/medical/paramedic)
 "bYk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -10126,6 +10104,23 @@
 /obj/effect/turf_decal/trimline/red/filled/line,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+"cpr" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/flashlight/lamp{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/paramedic)
 "cqa" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -18715,6 +18710,19 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/security/prison)
+"foR" = (
+/obj/structure/table,
+/obj/item/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/o2{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel/white,
+/area/space)
 "fpJ" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -20019,6 +20027,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"fNU" = (
+/obj/structure/table,
+/obj/item/storage/box/syringes{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_x = 7;
+	pixel_y = 12
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/pickaxe/mini,
+/turf/open/floor/plasteel/white,
+/area/space)
 "fOl" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -21452,6 +21477,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/security/physician)
+"gkZ" = (
+/obj/machinery/modular_computer/console/preset/medical{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/space)
 "gli" = (
 /obj/machinery/power/apc{
 	areastring = "/area/science/robotics/lab";
@@ -35021,6 +35052,13 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"kMC" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/plasteel/white,
+/area/space)
 "kME" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -40530,26 +40568,6 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/teleporter)
-"mLb" = (
-/obj/structure/table,
-/obj/item/storage/box/syringes{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_x = -8
-	},
-/obj/item/reagent_containers/glass/bottle/epinephrine{
-	pixel_x = -8;
-	pixel_y = 11
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/machinery/vending/wallmed{
-	pixel_y = -28
-	},
-/obj/item/pickaxe/mini,
-/turf/open/floor/plasteel/white,
-/area/medical/paramedic)
 "mLf" = (
 /obj/effect/spawner/lootdrop/maintenance/two,
 /turf/open/floor/plating,
@@ -50277,6 +50295,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"pQj" = (
+/obj/structure/table,
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/folder/white{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/obj/item/pen,
+/turf/open/floor/plasteel/white,
+/area/space)
 "pQr" = (
 /obj/machinery/portable_atmospherics/canister,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -51127,6 +51161,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+"qbk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plasteel/white,
+/area/space)
 "qbl" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /turf/open/floor/plasteel,
@@ -56154,6 +56192,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+"rGO" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/white,
+/area/medical/paramedic)
 "rGP" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -63242,6 +63284,23 @@
 	},
 /turf/open/floor/plating,
 /area/security/execution/transfer)
+"ucU" = (
+/obj/structure/table,
+/obj/item/roller{
+	pixel_x = 2;
+	pixel_y = 10
+	},
+/obj/item/roller{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/roller{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/pickaxe/mini,
+/turf/open/floor/plasteel/white,
+/area/space)
 "udz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
@@ -65702,6 +65761,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/engineering)
+"uUS" = (
+/obj/structure/table,
+/obj/item/roller{
+	pixel_x = -3;
+	pixel_y = 14
+	},
+/obj/item/roller{
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/turf/open/floor/plasteel/white,
+/area/medical/paramedic)
 "uVl" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -67055,6 +67127,10 @@
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
+"vvp" = (
+/obj/structure/closet/secure_closet/paramedic,
+/turf/open/floor/plasteel/white,
+/area/space)
 "vvP" = (
 /obj/machinery/camera{
 	c_tag = "Brig East"
@@ -67149,6 +67225,14 @@
 /obj/structure/closet/l3closet/janitor,
 /turf/open/floor/plasteel,
 /area/janitor)
+"vwx" = (
+/obj/structure/table,
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/machinery/vending/wallmed{
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/paramedic)
 "vwM" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -68102,6 +68186,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"vNS" = (
+/obj/machinery/suit_storage_unit/standard_unit{
+	suit_type = /obj/item/clothing/suit/space/paramedic
+	},
+/turf/open/floor/plasteel/white,
+/area/space)
 "vNX" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -74188,6 +74278,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"xOm" = (
+/obj/machinery/door/airlock/medical{
+	name = "Paramedic Staging Area";
+	req_access_txt = "69"
+	},
+/turf/open/floor/plasteel/white,
+/area/space)
 "xPf" = (
 /obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plasteel/white,
@@ -74521,28 +74618,6 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
-"xVJ" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/item/folder/white{
-	pixel_x = 4;
-	pixel_y = 1
-	},
-/obj/item/pen,
-/obj/item/flashlight/lamp{
-	pixel_x = -4;
-	pixel_y = 7
-	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/paramedic)
 "xVK" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -75087,19 +75162,6 @@
 /obj/effect/landmark/start/warden,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
-"yff" = (
-/obj/structure/table,
-/obj/item/storage/firstaid/o2{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/regular{
-	pixel_x = -3;
-	pixel_y = -3
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/paramedic)
 "yfr" = (
 /obj/structure/grille,
 /turf/open/space,
@@ -107680,7 +107742,7 @@ hEY
 akf
 jkF
 qNy
-oeG
+xoi
 vbg
 aGK
 nPt
@@ -108187,14 +108249,14 @@ uAR
 gFZ
 kzi
 xSa
-acb
-acb
-acb
-acb
-acb
-acb
-acb
-xoi
+cGI
+kMC
+foR
+pQj
+vNS
+vvp
+cGI
+oeG
 vbg
 cGI
 woF
@@ -108204,7 +108266,7 @@ cGI
 acb
 nlk
 bNQ
-xVJ
+cpr
 uut
 aVN
 kME
@@ -108444,13 +108506,13 @@ aWC
 gFZ
 efW
 wAz
-acb
-acb
-acb
-acb
-acb
-acb
-acb
+qbk
+cgY
+cgY
+cgY
+cgY
+cgY
+qbk
 oeG
 vbg
 cGI
@@ -108701,13 +108763,13 @@ uAR
 gFZ
 efW
 sSp
-acb
-acb
-acb
-acb
-acb
-acb
-acb
+xOm
+cgY
+cgY
+cgY
+cgY
+cgY
+xOm
 uWq
 tcc
 cGI
@@ -108719,7 +108781,7 @@ acb
 aOI
 eCd
 avU
-bYc
+uUS
 aVN
 cmB
 qDC
@@ -108958,13 +109020,13 @@ uAR
 gFZ
 dZL
 vuF
-acb
-acb
-acb
-acb
-acb
-acb
-acb
+qbk
+ucU
+fNU
+gkZ
+gkZ
+vvp
+qbk
 oeG
 nrQ
 cgY
@@ -109215,13 +109277,13 @@ uAR
 gFZ
 qSe
 jLT
-acb
-acb
-acb
-acb
-acb
-acb
-acb
+cGI
+cGI
+cGI
+cGI
+cGI
+cGI
+cGI
 pFT
 wpT
 cgY
@@ -109232,8 +109294,8 @@ cgY
 acb
 umD
 jHG
-yff
-mLb
+rGO
+vwx
 aVN
 mmq
 dSi
