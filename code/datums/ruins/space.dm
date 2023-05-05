@@ -359,3 +359,8 @@
 	name = "Cozy Home"
 	description = "A nice little place for travellers to rest. There is even a mint under the pillow!"
 	
+/datum/map_template/ruin/space/frontiership
+	id = "frontiership"
+	suffix = "frontiership.dmm"
+	name = "Frontier Ship"
+	description = "A derelict ship once belonging to a small group of space frontiersman"
