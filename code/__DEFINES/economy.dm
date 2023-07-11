@@ -8,12 +8,12 @@
 /// Probability of using letters of envelope sprites on all letters.
 #define FULL_CRATE_LETTER_ODDS 70
 
-#define PAYCHECK_ASSISTANT 5
-#define PAYCHECK_MINIMAL 5
-#define PAYCHECK_EASY 20
-#define PAYCHECK_MEDIUM 30
-#define PAYCHECK_HARD 40
-#define PAYCHECK_COMMAND 100
+#define PAYCHECK_ASSISTANT 15
+#define PAYCHECK_MINIMAL 20
+#define PAYCHECK_EASY 30
+#define PAYCHECK_MEDIUM 60
+#define PAYCHECK_HARD 100
+#define PAYCHECK_COMMAND 200
 
 #define STARTING_SEC_BUDGET 14000
 #define STARTING_CAR_BUDGET 5000
