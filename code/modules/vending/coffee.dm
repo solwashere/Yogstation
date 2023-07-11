@@ -9,7 +9,7 @@
 		            /obj/item/reagent_containers/food/drinks/mug/coco = 3)
 	contraband = list(/obj/item/reagent_containers/food/drinks/ice = 12)
 	refill_canister = /obj/item/vending_refill/coffee
-	default_price = 10
+	default_price = 5
 	extra_price = 25
 	payment_department = ACCOUNT_SRV
 /obj/item/vending_refill/coffee

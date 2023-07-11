@@ -7,7 +7,6 @@
 	products = list(/obj/item/clothing/glasses/meson/engine = 2,
 					/obj/item/clothing/glasses/welding = 3,
 					/obj/item/multitool = 4,
-					/obj/item/construction/rcd = 5,
 					/obj/item/rcd_ammo = 3,
 					/obj/item/grenade/chem_grenade/smart_metal_foam = 10,
 					/obj/item/geiger_counter = 5,
@@ -19,14 +18,15 @@
 					/obj/item/electronics/firealarm = 10,
 					/obj/item/electronics/firelock = 10,
 					/obj/item/storage/bag/construction = 6,
-					/obj/item/laserlevel = 3)
+					/obj/item/laserlevel = 3,
+					/obj/item/storage/bag/sheetsnatcher = 6,
+					/obj/item/storage/belt/utility = 3)
 	contraband = list(/obj/item/stock_parts/cell/potato = 3)
-	premium = list(/obj/item/storage/belt/utility = 3,
-				   /obj/item/storage/box/smart_metal_foam = 6,
-				   /obj/item/storage/bag/sheetsnatcher = 6)
+	premium = list(/obj/item/storage/box/smart_metal_foam = 6,
+				   /obj/item/construction/rcd = 5,)
 	refill_canister = /obj/item/vending_refill/engivend
-	default_price = 20
-	extra_price = 50
+	default_price = 25
+	extra_price = 75
 	payment_department = ACCOUNT_ENG
 
 /obj/item/vending_refill/engivend

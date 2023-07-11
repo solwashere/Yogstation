@@ -18,7 +18,7 @@
 					  /obj/item/reagent_containers/glass/bottle/diethylamine = 5)
 	refill_canister = /obj/item/vending_refill/hydronutrients
 	default_price = 10
-	extra_price = 50
+	extra_price = 20
 	payment_department = ACCOUNT_SRV
 
 /obj/item/vending_refill/hydronutrients

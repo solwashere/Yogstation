@@ -13,7 +13,7 @@
 					/obj/item/storage/box/matches = 10,
 					/obj/item/lighter/greyscale = 4,
 					/obj/item/storage/box/fancy/rollingpapers = 5)
-	contraband = list(/obj/item/clothing/mask/vape = 5)
+	contraband = list(/obj/item/clothing/mask/vape = 20)
 	premium = list(/obj/item/storage/box/fancy/cigarettes/cigpack_robustgold = 3,
 				   /obj/item/lighter = 3,
 		           /obj/item/storage/box/fancy/cigarettes/cigars = 1,

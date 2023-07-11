@@ -2,8 +2,8 @@
 	icon_state = "refill_clothes"
 
 /obj/machinery/vending/wardrobe
-	default_price = 50
-	extra_price = 75
+	default_price = 25
+	extra_price = 50
 	payment_department = NO_FREEBIES
 	input_display_header = "Returned Clothing"
 
@@ -60,6 +60,8 @@
 					/obj/item/clothing/suit/armor/officerjacket = 3,
 					/obj/item/clothing/head/beret/sec/navyofficer = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/sec_wardrobe
+	default_price = 50
+	extra_price = 100
 	payment_department = ACCOUNT_SEC
 
 /obj/item/vending_refill/wardrobe/sec_wardrobe
